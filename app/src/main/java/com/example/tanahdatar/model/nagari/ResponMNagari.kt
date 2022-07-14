@@ -1,20 +1,18 @@
 package com.example.tanahdatar.model.nagari
 
 import com.example.tanahdatar.model.Dananagari
+import com.example.tanahdatar.model.Datanagari
+import com.example.tanahdatar.model.sekolah.DanaSekolah
 import java.util.*
 
-class ResponModelNagari {
+class ResponMNagari {
     var success : Boolean  = true
-    var message = ""
-    val data = NagariD()
+    var pesan = ""
+    val data = NagariData()
 
-    class NagariD{
-        val total_record = ""
-        val total_page = ""
-        val result = ArrayList<Dananagari>()
+    class NagariData{
+        val result = ArrayList<DataNamaNagari>()
+        //val result = ArrayList<Datanagari>()
     }
-
-
-
 
 }

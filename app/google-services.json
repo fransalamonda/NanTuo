@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "977675586747",
+    "project_id": "tanahdatar-e2dc0",
+    "storage_bucket": "tanahdatar-e2dc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977675586747:android:5df64170f671e79ecf2d9e",
+        "android_client_info": {
+          "package_name": "com.example.tanahdatar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977675586747-m83pqbpdhpkucpa8hck7c4at6pfodfoh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE2vPiT3ZLnT7311Ulrw-zDzZbgTsTuFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977675586747-m83pqbpdhpkucpa8hck7c4at6pfodfoh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

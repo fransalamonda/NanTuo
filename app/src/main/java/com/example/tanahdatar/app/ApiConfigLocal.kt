@@ -8,10 +8,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-object ApiConfig {
-    //private const val BASE_URL = Bitmap.Config.baseUrl2 + "api/"
-    private const val BASE_URL = "https://jaga.id/api/"
-    //private const val BASE_URL = "https://fransalamonda.com/api/"
+object ApiConfigLocal {
+    private const val BASE_URL = "https://fransalamonda.com/mf/"
     private val client: Retrofit
     get() {
         val gson = GsonBuilder()
@@ -32,6 +30,6 @@ object ApiConfig {
             .client(client)
             .build()
     }
-    val instanceRetrofit: ApiService
-        get() = client.create(ApiService::class.java)
+    val instanceRetrofit: ApiServiceLocal
+        get() = client.create(ApiServiceLocal::class.java)
 }

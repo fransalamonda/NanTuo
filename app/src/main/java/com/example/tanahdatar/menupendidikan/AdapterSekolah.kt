@@ -1,4 +1,4 @@
-package com.example.tanahdatar.adapter
+package com.example.tanahdatar.menupendidikan
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,9 +9,10 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tanahdatar.R
 import com.example.tanahdatar.model.Datanagari
+import com.example.tanahdatar.model.sekolah.ListSekolah
 import java.util.*
 
-class AdapterNagari(var data: ArrayList<Datanagari>, var listener: Listeners) : RecyclerView.Adapter<AdapterNagari.Holder>() {
+class AdapterSekolah(var data: ArrayList<ListSekolah>, var listener: Listeners) : RecyclerView.Adapter<AdapterSekolah.Holder>() {
 
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
         val tvNamaNagari = view.findViewById<TextView>(R.id.tv_nama_n)
@@ -21,7 +22,7 @@ class AdapterNagari(var data: ArrayList<Datanagari>, var listener: Listeners) : 
     lateinit var context: Context
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         context = parent.context
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_nagari, parent, false)
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_sekolah, parent, false)
         return Holder(view)
     }
 
@@ -33,7 +34,7 @@ class AdapterNagari(var data: ArrayList<Datanagari>, var listener: Listeners) : 
         val b = data[position]
 
         holder.tvNamaNagari.text = b.nama
-        holder.tvNamaKec.text = b.kecamatan
+        //holder.tvNamaKec.text = b.kecamatan
 
         holder.layoutNag.setOnClickListener {
             listener.onClicked(b)
@@ -41,7 +42,7 @@ class AdapterNagari(var data: ArrayList<Datanagari>, var listener: Listeners) : 
     }
 
     interface Listeners {
-        fun onClicked(data: Datanagari)
+        fun onClicked(data: ListSekolah)
     }
 
 

@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tanahdatar.R
-import com.example.tanahdatar.adapter.AdapterNagari
+import com.example.tanahdatar.menudesa.adapter.AdapterNagari
 import com.example.tanahdatar.app.ApiConfig
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_dana_desa.*

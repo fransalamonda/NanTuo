@@ -5,7 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.tanahdatar.R
+import com.example.tanahdatar.app.ApiConfig
+import com.example.tanahdatar.menupendidikan.Adapter.AdapterSma
+import com.example.tanahdatar.model.sekolah.ListSekolah
+import com.example.tanahdatar.model.sekolah.ResponSekolah
+import kotlinx.android.synthetic.main.activity_dana_desa.*
+import kotlinx.android.synthetic.main.activity_pendidikan.*
+import kotlinx.android.synthetic.main.activity_pendidikan.pb
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,43 +30,45 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class SMPFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    lateinit var rvSMP: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_s_m_p, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_s_m_p, container, false)
+        init(view)
+        getSmp()
+        return view
     }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment SMPFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            SMPFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+    fun displaySekolah(lprov: java.util.ArrayList<ListSekolah>) {
+        val layoutManager = LinearLayoutManager(activity)
+        layoutManager.orientation = LinearLayoutManager.VERTICAL
+        rvSMP.adapter = AdapterSma(requireActivity(), lprov)
+        rvSMP.layoutManager = layoutManager
+    }
+    fun getSmp() {
+        //pb.visibility = View.VISIBLE
+        ApiConfig.instanceRetrofit.getSekolahSMP().enqueue(object : Callback<ResponSekolah> {
+            override fun onResponse(call: Call<ResponSekolah>, response: Response<ResponSekolah>) {
+                val res = response.body()!!
+                if(res.success == true ){
+                    val arraySma = ArrayList<ListSekolah>()
+                    displaySekolah(res.data.result)
+                    //pb.visibility = View.GONE
                 }
             }
+
+            override fun onFailure(call: Call<ResponSekolah>, t: Throwable) {
+                pb.visibility = View.GONE
+                // Toast.makeText(this@SMAFragment, "Data Error 2", Toast.LENGTH_SHORT).show()
+            }
+
+        })
+    }
+
+    fun init(view: View) {
+        rvSMP = view.findViewById(R.id.rv_smp)
     }
 }

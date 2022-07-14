@@ -27,21 +27,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="1dp">
+            android:padding="1dp"
+            android:background="@drawable/bulat_ii">
 
             <ImageView
-                android:id="@+id/iv_menu1"
+                android:id="@+id/btn_sma"
                 android:layout_width="62dp"
                 android:layout_height="41dp"
                 android:layout_weight="1"
-                android:src="@drawable/ic_sekolah" />
+                android:src="@drawable/ic_sd1" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/t_sma"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="SD" />
+                android:gravity="center"
+                android:text="SMA"
+                android:fontFamily="@font/poppinssemibold"/>
 
         </LinearLayout>
 
@@ -49,10 +52,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="1dp">
+            android:padding="1dp"
+            android:background="@drawable/bulat_ii">
 
             <ImageView
-                android:id="@+id/iv_menu3"
+                android:id="@+id/btn_smp"
                 android:layout_width="62dp"
                 android:layout_height="41dp"
                 android:layout_weight="1"
@@ -63,10 +67,58 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="SMP" />
+                android:gravity="center"
+                android:text="SMP"
+                android:fontFamily="@font/poppinssemibold"/>
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="1dp"
+            android:background="@drawable/bulat_ii">
+
+            <ImageView
+                android:id="@+id/btn_sd"
+                android:layout_width="62dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_classroom" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SD"
+                android:fontFamily="@font/poppinssemibold"/>
+
+        </LinearLayout>
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Small"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+<!--    android:visibility="gone"-->
+    <FrameLayout
+        android:id="@+id/layout_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

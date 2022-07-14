@@ -45,18 +45,44 @@
                             android:layout_height="wrap_content"
                             android:ellipsize="marquee"
                             android:fontFamily="sans-serif-black"
-                            android:text="Tanah Datar"
+                            android:text="Nan Tuo"
                             android:textColor="@android:color/black"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/tv_group"
+                            android:id="@+id/tv_td"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-black"
-                            android:text="tpt"
+                            android:ellipsize="marquee"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="aplikasi informasi dan layanan masyaraka Kab Tanah Datar"
+                            android:textSize="12sp"
                             android:textColor="@android:color/black"
-                            android:textSize="11dp" />
+                            android:textStyle="normal"
+                            android:layout_marginTop="6dp"/>
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/latitude_text"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:ellipsize="marquee"-->
+<!--                            android:fontFamily="@font/poppinsmedium"-->
+<!--                            android:text="aplikasi informasi"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textColor="@android:color/black"-->
+<!--                            android:textStyle="normal"-->
+<!--                            android:layout_marginTop="6dp"/>-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/longitude_text"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:ellipsize="marquee"-->
+<!--                            android:fontFamily="@font/poppinsmedium"-->
+<!--                            android:text="aplikasi informasi"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textColor="@android:color/black"-->
+<!--                            android:textStyle="normal"-->
+<!--                            android:layout_marginTop="6dp"/>-->
 
                     </LinearLayout>
                     <LinearLayout
@@ -66,7 +92,24 @@
                         android:layout_weight="1"
                         android:gravity="right"
                         android:orientation="vertical">
-
+<!--                        <TextView-->
+<!--                            android:id="@+id/tv_user"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:ellipsize="marquee"-->
+<!--                            android:fontFamily="sans-serif-black"-->
+<!--                            android:text="Fran"-->
+<!--                            android:textColor="@android:color/black"-->
+<!--                            android:textStyle="bold" />-->
+                        <ImageView
+                            android:id="@+id/iv_profile"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/user_pic" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -75,31 +118,26 @@
 
         </androidx.cardview.widget.CardView>
 
+
         <androidx.cardview.widget.CardView
             android:id="@+id/layout_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_margin="30dp"
             android:layout_marginHorizontal="15dp"
-            app:cardCornerRadius="4dp"
-            app:cardElevation="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#d3d3d3"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="30dp"
             app:layout_constraintTop_toBottomOf="@+id/layout_p"
-            tools:layout_editor_absoluteX="15dp">
+            tools:layout_editor_absoluteX="30dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:orientation="vertical"
                 android:padding="1dp">
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:paddingHorizontal="10dp"
-                    android:text="" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -120,15 +158,15 @@
                             android:layout_height="60dp"
                             android:layout_gravity="center"
                             android:background="@drawable/circle"
-                            app:srcCompat="@drawable/ic_tiket" />
+                            app:srcCompat="@drawable/i_homesmack" />
 
                         <TextView
                             android:id="@+id/btn_desa"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-black"
+                            android:fontFamily="@font/poppinssemibold"
                             android:gravity="center"
-                            android:text="Dana Desa"
+                            android:text="Dana Nagari"
                             android:textColor="@android:color/black" />
 
                     </LinearLayout>
@@ -151,7 +189,7 @@
                             android:id="@+id/btn_pendidikan"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-black"
+                            android:fontFamily="@font/poppinssemibold"
                             android:gravity="center"
                             android:text="Dana Pendidikan"
                             android:textColor="@android:color/black" />
@@ -162,6 +200,137 @@
 
 
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_p3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="1dp"
+            android:background="#d3d3d3"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/layout_p2"
+            tools:layout_editor_absoluteX="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/im_kesehatan"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            app:srcCompat="@drawable/ic_rs" />
+
+                        <TextView
+                            android:id="@+id/btn_kesehatan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:gravity="center"
+                            android:text="Kesehatan"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/im_pasar"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            app:srcCompat="@drawable/ic_pasar" />
+
+                        <TextView
+                            android:id="@+id/btn_pasar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:gravity="center"
+                            android:text="Info Komoditi Pertanian"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_p4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#d3d3d3"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/layout_p3"
+            tools:layout_editor_absoluteX="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/im_dnagari"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            app:srcCompat="@drawable/i_homesmack" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

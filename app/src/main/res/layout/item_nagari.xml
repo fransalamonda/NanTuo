@@ -7,8 +7,8 @@
     android:layout_marginHorizontal="1dp"
     android:layout_marginTop="1dp"
     android:layout_marginBottom="1dp"
-    app:cardCornerRadius="4dp"
-    app:cardElevation="1dp">
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,8 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="15dp">
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -34,8 +34,11 @@
                     android:layout_height="wrap_content"
                     android:ellipsize="marquee"
                     android:text="Provinsi"
-                    android:textColor="@color/design_default_color_primary_dark"
-                    android:textStyle="bold" />
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:layout_marginTop="6dp" />
 
             </LinearLayout>
 
@@ -51,9 +54,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="kecamatan"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppinsmedium"
                     android:ellipsize="marquee"
-                    android:textColor="@color/design_default_color_primary_dark"
-                    android:textStyle="bold" />
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:layout_marginTop="6dp"/>
 
             </LinearLayout>
 
@@ -68,8 +74,9 @@
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@android:drawable/ic_input_add" />
+                    android:layout_height="20dp"
+                    android:layout_marginTop="6dp"
+                    app:srcCompat="@drawable/i_keeptrackpro" />
             </LinearLayout>
 
         </LinearLayout>

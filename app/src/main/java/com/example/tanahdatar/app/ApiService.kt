@@ -1,7 +1,9 @@
 package com.example.tanahdatar.app
 
 import com.example.tanahdatar.model.ResponModel
-import com.example.tanahdatar.model.ResponModelNagari
+import com.example.tanahdatar.model.nagari.ResponModelNagari
+import com.example.tanahdatar.model.sekolah.ResponModelSekolah
+import com.example.tanahdatar.model.sekolah.ResponSekolah
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -27,6 +29,20 @@ interface ApiService {
         @Query("tahun") tahun: String,
         @Query("kode") kode: String
     ): Call<ResponModelNagari>
+
+
+    @GET("v5/sekolah/search?limit=1000&jenjang=1&kota=Kab.+Tanah+Datar")
+    fun getSekolahSD(): Call<ResponSekolah>
+    @GET("v5/sekolah/search?limit=100&jenjang=3&kota=Kab.+Tanah+Datar")
+    fun getSekolahSMA(): Call<ResponSekolah>
+    @GET("v5/sekolah/search?limit=100&jenjang=2&kota=Kab.+Tanah+Datar")
+    fun getSekolahSMP(): Call<ResponSekolah>
+    @GET("v5/bos/detail")
+    fun getListSekolah(
+        @Query("tahun") tahun: String,
+        @Query("npsn") npsn: String
+    ): Call<ResponModelSekolah>
+
 
 //    @GET("api/getWilayahProv")
 //    @GET("api/g_wilayah_p")

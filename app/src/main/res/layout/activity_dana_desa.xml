@@ -35,10 +35,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="10dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:orientation="vertical"
                         android:paddingHorizontal="10dp"
                         android:paddingVertical="0dp">
 
@@ -52,6 +53,15 @@
                             android:textColor="@color/design_default_color_primary_dark"
                             android:textSize="14sp"
                             android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:text="Sumber Data : Jaringan Pencegahan Korupsi,. Untuk informasi lebih lanjut kunjungi https://jaga.id"
+                            android:textSize="9dp"
+                            android:textStyle="italic" />
 
                     </LinearLayout>
 
@@ -67,14 +77,14 @@
             android:id="@+id/h_table"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_below="@+id/info">
+            android:layout_below="@+id/info"
+            android:layout_marginHorizontal="10dp">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                app:cardBackgroundColor="@color/black"
+                app:cardBackgroundColor="@color/black_a"
                 app:cardCornerRadius="3dp"
                 app:cardElevation="1dp">
 
@@ -163,14 +173,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="10dp">
+                android:padding="1dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="10dp"
-                    android:paddingVertical="0dp">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingHorizontal="10dp"-->
+<!--                    android:paddingVertical="0dp">-->
 
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -186,7 +196,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         />
 
-                </LinearLayout>
+<!--                </LinearLayout>-->
 
 
             </LinearLayout>
@@ -195,12 +205,13 @@
 
         <ProgressBar
             android:id="@+id/pb"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Small"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginLeft="160dp"
             android:layout_marginTop="300dp"
-            android:visibility="gone"
-            />
+            android:progressDrawable="@drawable/ic_nantuo"
+            android:visibility="gone" />
 
 
 

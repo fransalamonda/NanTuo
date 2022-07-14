@@ -4,14 +4,42 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_nantuo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.noActionBar">
+
+        <!--            android:value="ca-app-pub-8351252705673421~1734194390"/>
+        ca-app-pub-8351252705673421~1734194390
+        ca-app-pub-8351252705673421/6134272706-->
+<!--        test-ca-app-pub-3940256099942544~3347511713-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+        <activity
+            android:name=".menudananagari.DetailDanaNagariActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menudananagari.DanaNagariActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menukomoditi.KomoditiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menupendidikan.DetailSekolahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menupendidikan.CariSekolahActivity"
+            android:exported="false" />
         <activity
             android:name=".menupendidikan.PendidikanActivity"
             android:exported="false" />

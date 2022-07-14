@@ -1,4 +1,4 @@
-package com.example.googleloginlogout
+package com.example.tanahdatar
 
 import android.content.Context
 import android.content.SharedPreferences

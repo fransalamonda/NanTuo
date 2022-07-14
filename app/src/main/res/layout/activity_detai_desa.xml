@@ -24,9 +24,14 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="15dp"
-                app:cardCornerRadius="3dp"
-                app:cardElevation="1dp">
+                android:background="#d3d3d3"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="30dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -41,8 +46,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_marginTop="15dp"
+                    android:orientation="vertical"
                     android:padding="5dp">
 
                     <LinearLayout
@@ -62,9 +67,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ellipsize="marquee"
+                                android:fontFamily="@font/poppinsregular"
                                 android:text="Nagari"
                                 android:textColor="@color/design_default_color_primary_dark"
-                                android:textStyle="bold" />
+                                android:textStyle="normal" />
 
                         </LinearLayout>
 
@@ -80,10 +86,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ellipsize="marquee"
+                                android:fontFamily="@font/poppinsregular"
                                 android:text="Kelengkapan"
                                 android:textColor="@color/design_default_color_primary_dark"
                                 android:textStyle="normal" />
-
 
 
                         </LinearLayout>
@@ -107,9 +113,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ellipsize="marquee"
+                                android:fontFamily="@font/poppinsregular"
                                 android:text="Kecamatan"
                                 android:textColor="@color/design_default_color_primary_dark"
-                                android:textStyle="bold" />
+                                android:textStyle="normal" />
 
                         </LinearLayout>
 
@@ -125,6 +132,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ellipsize="marquee"
+                                android:fontFamily="@font/poppinsregular"
                                 android:text="Kelengkapan"
                                 android:textColor="@color/design_default_color_primary_dark"
                                 android:textStyle="normal" />
@@ -149,10 +157,11 @@
                                 android:id="@+id/tv_tahun"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Tahun Anggaran"
                                 android:ellipsize="marquee"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Tahun Anggaran"
                                 android:textColor="@color/design_default_color_primary_dark"
-                                android:textStyle="bold" />
+                                android:textStyle="normal" />
 
                         </LinearLayout>
 
@@ -163,11 +172,12 @@
                             android:layout_weight="1.9"
                             android:orientation="vertical">
 
-                        <Spinner
-                            android:id="@+id/spinner_tahun"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
-
+                            <Spinner
+                                android:id="@+id/spinner_tahun"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/design_default_color_primary_dark" />
 
 
                         </LinearLayout>
@@ -177,7 +187,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
 
         </androidx.core.widget.NestedScrollView>
@@ -309,17 +318,18 @@
             android:id="@+id/h_table2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_below="@+id/h_table1">
+            android:layout_below="@+id/h_table1"
+            android:layout_marginHorizontal="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="15dp"
                 android:text=" Informasi Penyaluran "
                 android:textColor="@color/black"
-                android:textSize="12dp"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
         </androidx.core.widget.NestedScrollView>
@@ -328,27 +338,132 @@
             android:id="@+id/h_table3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_below="@+id/h_table2">
-
+            android:layout_below="@+id/h_table2"
+            android:layout_marginHorizontal="1dp">
 
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_list_penyaluran"
-                android:paddingTop="0dp"
-                android:paddingBottom="30dp"
-                android:clipToPadding="false"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:orientation="horizontal"
-                tools:itemCount="5"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:clipToPadding="false"
+                android:paddingTop="0dp"
+                android:paddingBottom="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:itemCount="3" />
 
         </androidx.core.widget.NestedScrollView>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/h_table4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/h_table3"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:text=" Rincian Penyerapan "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </androidx.core.widget.NestedScrollView>
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/t_rincian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/h_table4">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_tahap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tahap :"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_rincian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_rin1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 :"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_rin2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.core.widget.NestedScrollView>
+
     </RelativeLayout>
 
 </LinearLayout>

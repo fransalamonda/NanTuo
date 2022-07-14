@@ -19,8 +19,85 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="15dp">
+            android:paddingHorizontal="0dp"
+            android:paddingVertical="1dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:text=" Anggaran Dana Bantuan Operasional Sekolah (BOS) "
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppinsbold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="1dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="Triwulan"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_tri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="1dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -29,17 +106,219 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="Jumlah dana yang diterima sekolah"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_jml_dana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="1dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="Jumlah dana yang dicairkan oleh Provinsi"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_jml_cair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="1dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="Jumlah Siswa Penerima"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_jml_siswa_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="1dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="Tanggal Pencairan"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_tgl_cair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Rincian Penggunaan"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#040303"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:orientation="vertical">
+
+                <TextView
                     android:id="@+id/tv_nama_n"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ellipsize="marquee"
-                    android:text="Sekolah"
+                    android:text="Nama"
+                    android:textColor="@color/design_default_color_background"
                     android:textSize="12sp"
-                    android:textColor="@color/design_default_color_primary_dark"
                     android:textStyle="normal" />
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="Total Unit"
+                    android:textColor="@color/design_default_color_background"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
 
 
             <LinearLayout
@@ -50,11 +329,15 @@
                 android:orientation="vertical">
 
 
-                <ImageView
-                    android:id="@+id/imageView2"
+                <TextView
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@android:drawable/ic_input_add" />
+                    android:ellipsize="marquee"
+                    android:text="Total Dana"
+                    android:textColor="@color/design_default_color_background"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
             </LinearLayout>
 
         </LinearLayout>
@@ -64,48 +347,437 @@
             android:layout_height="1dp"
             android:background="#E3E3E3" />
 
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:paddingHorizontal="10dp"-->
-<!--            android:paddingVertical="15dp">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp">
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_weight="1"-->
-<!--                android:orientation="vertical">-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_status"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:ellipsize="marquee"-->
-<!--                    android:textColor="#4CAF50" />-->
+                <TextView
+                    android:id="@+id/tv_nmpengguna"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="Triwulan"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
 
-<!--            </LinearLayout>-->
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="5dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="right"-->
-<!--                android:orientation="vertical">-->
+                <TextView
+                    android:id="@+id/tv_nmpengguna2"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="Triwulan"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/btn_detail"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:ellipsize="marquee"-->
-<!--                    android:text="DETAILS"-->
-<!--                    android:textColor="#2196F3"-->
-<!--                    android:textStyle="bold" />-->
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
 
-<!--            </LinearLayout>-->
+                <TextView
+                    android:id="@+id/tv_nmpengguna3"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
 
-<!--        </LinearLayout>-->
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
+
+                <TextView
+                    android:id="@+id/tv_nmpengguna4"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
+
+                <TextView
+                    android:id="@+id/tv_nmpengguna5"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
+
+                <TextView
+                    android:id="@+id/tv_nmpengguna6"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
+
+                <TextView
+                    android:id="@+id/tv_nmpengguna7"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="999999"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
+
+                <TextView
+                    android:id="@+id/tv_nmpengguna8"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="999999"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
+
+                <TextView
+                    android:id="@+id/tv_nmpengguna9"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="999999"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
+
+                <TextView
+                    android:id="@+id/tv_nmpengguna10"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana10"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="999999"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
+
+                <TextView
+                    android:id="@+id/tv_nmpengguna11"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana11"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="999999"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp">
+
+                <TextView
+                    android:id="@+id/tv_nmpengguna12"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsregular" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tv_total_dana12"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="999999"
+                    android:textSize="10sp"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#E3E3E3" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

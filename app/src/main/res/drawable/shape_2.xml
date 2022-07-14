@@ -3,7 +3,7 @@
     android:shape="rectangle">
 
     <solid
-        android:color="#EFECEC" >
+        android:color="@color/colorKuning_a" >
     </solid>
 
     <stroke
@@ -19,8 +19,9 @@
     </padding>
 
     <corners
-        android:radius="51dp"   >
+        android:bottomLeftRadius="50dp"
+        android:bottomRightRadius="50dp"
+           >
     </corners>
-
 
 </shape>

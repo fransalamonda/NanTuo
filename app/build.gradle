@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.appdistribution'
 }
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
@@ -32,8 +34,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        viewBinding true
+   // buildFeatures {
+     //   viewBinding true
+   // }
+    viewBinding {
+        enabled = true
     }
 }
 
@@ -46,10 +51,14 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.android.gms:play-services-ads-lite:20.6.0'
+    //implementation 'com.google.android.gms:play-services-ads-lite:20.6.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 //card View
+    //noinspection GradleCompatible
     implementation 'com.android.support:cardview-v7:29.0.0'
     implementation 'com.google.android.material:material:1.0.0'
 
@@ -61,4 +70,18 @@ dependencies {
 
     //display image
     implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+// Also declare the dependency for the Google Play services library and specify its version
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+
+    implementation "com.google.android.gms:play-services-location:17.0.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50"
+
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+
+
+
 }

@@ -1,4 +1,4 @@
-package com.example.tanahdatar.adapter
+package com.example.tanahdatar.menudesa.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -29,7 +29,7 @@ class AdapterNagari(var data: ArrayList<Datanagari>, var listener: Listeners) : 
         return data.size
     }
 
-    override fun onBindViewHolder(holder:Holder, position: Int) {
+    override fun onBindViewHolder(holder: Holder, position: Int) {
         val b = data[position]
 
         holder.tvNamaNagari.text = b.nama
